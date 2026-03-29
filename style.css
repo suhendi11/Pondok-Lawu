@@ -114,3 +114,22 @@ footer {
         width: 90%;
     }
 }
+
+.fasilitas {
+    padding: 50px;
+    text-align: center;
+}
+
+.fasilitas-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fasilitas-list div {
+    background: #27ae60;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
