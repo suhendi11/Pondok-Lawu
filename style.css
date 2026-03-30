@@ -35,16 +35,23 @@ text-align:center;
 
 .navbar{
 
+.navbar{
+
 position:absolute;
+
 top:0;
 
 width:100%;
 
 display:flex;
-justify-content:space-between;
+
 align-items:center;
 
+justify-content:center;
+
 padding:20px 10%;
+
+}
 
 background:rgba(0,0,0,0.2);
 backdrop-filter:blur(6px);
@@ -78,9 +85,21 @@ color:white;
 }
 
 .menu-toggle{
-display:none;
-font-size:24px;
+
+font-size:34px;   /* bikin lebih besar */
+
 cursor:pointer;
+
+display:none;
+
+position:absolute;
+
+left:20px;       /* lebih ke kiri */
+
+top:18px;
+
+z-index:1000;
+
 }
 
 /* HERO TEXT */
