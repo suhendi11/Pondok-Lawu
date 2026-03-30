@@ -22,7 +22,7 @@ color:white;
 
 .hero{
 
-height:95vh;
+height:100vh;
 
 background:
 linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
@@ -151,27 +151,47 @@ transform:translateY(-6px);
 
 }
 
-/* ABOUT */
+/* ABOUT TOGGLE */
+
+.about-toggle{
+
+margin-top:20px;
+cursor:pointer;
+
+}
 
 .about{
 
+display:none;
+
 padding:120px 10%;
+text-align:center;
 
 }
 
-.about-container{
+/* MINI FACILITY */
 
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+.facility-mini{
+
+margin-top:25px;
+
+display:flex;
+flex-wrap:wrap;
+
+gap:10px;
+justify-content:center;
 
 }
 
-.about-image img{
+.facility-mini div{
 
-width:100%;
-border-radius:15px;
+background:rgba(255,255,255,0.1);
+
+padding:8px 14px;
+
+border-radius:20px;
+
+font-size:13px;
 
 }
 
@@ -187,7 +207,6 @@ text-align:center;
 .villa h2{
 
 margin-bottom:60px;
-font-size:36px;
 
 }
 
@@ -195,7 +214,7 @@ font-size:36px;
 
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:40px;
+gap:35px;
 
 }
 
@@ -244,12 +263,6 @@ text-align:center;
 
 }
 
-.location-text{
-
-margin-bottom:40px;
-
-}
-
 .map-container{
 
 border-radius:20px;
@@ -258,8 +271,6 @@ overflow:hidden;
 box-shadow:0 20px 40px rgba(0,0,0,0.4);
 
 }
-
-
 
 /* FLOATING WA */
 
@@ -300,12 +311,6 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-.about-container{
-
-grid-template-columns:1fr;
-
-}
-
 .hero-content h1{
 
 font-size:45px;
@@ -332,82 +337,6 @@ grid-template-columns:1fr;
 
 font-size:35px;
 
-}
-
-/* LOCATION */
-
-.location{
-padding:120px 10%;
-text-align:center;
-}
-
-.map-container{
-border-radius:20px;
-overflow:hidden;
-}
-
-/* ================= */
-/* FASILITAS */
-/* ================= */
-
-.facility{
-
-padding:120px 10%;
-text-align:center;
-
-}
-
-.facility h2{
-
-font-size:36px;
-margin-bottom:60px;
-
-}
-
-.facility-grid{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-
-}
-
-.facility-card{
-
-background:rgba(255,255,255,0.08);
-
-backdrop-filter:blur(10px);
-
-padding:25px;
-
-border-radius:15px;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-
-transition:0.3s;
-
-}
-
-.facility-card:hover{
-
-transform:translateY(-6px);
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:1000px){
-
-.facility-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:600px){
-
-.facility-grid{
-grid-template-columns:1fr;
 }
 
 }
