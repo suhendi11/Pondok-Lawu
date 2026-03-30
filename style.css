@@ -1,77 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    background:#f5f5f5;
+background:#f5f5f5;
 }
 
-.villa-section{
-    padding:60px 10%;
-    text-align:center;
+/* HERO */
+
+.hero{
+height:80vh;
+background:url("image/background-home.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+color:white;
+position:relative;
 }
 
-.section-title{
-    font-size:32px;
-    margin-bottom:40px;
+.hero::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+top:0;
+left:0;
 }
 
-.villa-container{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:25px;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:relative;
+z-index:2;
 }
 
-.villa-card{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
+.logo{
+font-size:22px;
+font-weight:bold;
 }
 
-.villa-card:hover{
-    transform:translateY(-8px);
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
 }
 
-.villa-card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
+.menu a{
+color:white;
+text-decoration:none;
+font-size:16px;
 }
 
-.villa-card h3{
-    margin:15px 0 10px 0;
+.hero-text{
+text-align:center;
+position:relative;
+z-index:2;
 }
 
-.villa-card p{
-    padding:0 15px;
-    font-size:14px;
-    color:#666;
+.hero-text h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+margin-bottom:20px;
 }
 
 .btn{
-    display:inline-block;
-    margin:20px 0;
-    padding:10px 20px;
-    background:#1ea6e6;
-    color:white;
-    text-decoration:none;
-    border-radius:20px;
+background:#2fa4da;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+color:white;
 }
 
-.btn:hover{
-    background:#0d8ac4;
+/* SECTION VILLA */
+
+.villa-section{
+padding:80px 10%;
+text-align:center;
 }
 
-/* Responsive */
+.section-title{
+font-size:32px;
+margin-bottom:50px;
+}
+
+.villa-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.villa-card{
+background:white;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+padding-bottom:20px;
+transition:0.3s;
+}
+
+.villa-card:hover{
+transform:translateY(-10px);
+}
+
+.villa-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+.villa-card h3{
+margin:15px 0 10px;
+}
+
+.villa-card p{
+padding:0 15px;
+color:#666;
+font-size:14px;
+}
+
+.btn-card{
+display:inline-block;
+margin-top:20px;
+background:#2fa4da;
+padding:10px 22px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+}
+
+/* RESPONSIVE */
 
 @media(max-width:1000px){
-    .villa-container{
-        grid-template-columns:repeat(2,1fr);
-    }
+
+.villa-container{
+grid-template-columns:repeat(2,1fr);
+}
+
 }
 
 @media(max-width:600px){
-    .villa-container{
-        grid-template-columns:1fr;
-    }
+
+.villa-container{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
 }
