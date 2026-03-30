@@ -5,20 +5,10 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-
 body{
-
-background:linear-gradient(
-180deg,
-#0f2027,
-#203a43,
-#2c5364
-);
-
+background:#0f2027;
 color:white;
-
 }
-
 
 /* HERO */
 
@@ -27,23 +17,19 @@ color:white;
 height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
 url("image/background-home.jpg");
 
 background-size:cover;
 background-position:center;
 
 display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
 
 text-align:center;
 
-position:relative;
-
 }
-
 
 /* NAVBAR */
 
@@ -58,101 +44,85 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:25px 10%;
+padding:20px 10%;
+
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(6px);
 
 }
 
 .logo{
-
+font-weight:700;
 font-size:22px;
-font-weight:600;
-
 }
 
 .menu{
-
 display:flex;
 gap:30px;
-
 list-style:none;
-
 }
 
 .menu a{
-
 color:white;
 text-decoration:none;
-
+font-size:14px;
 }
 
-.instagram-btn{
+.instagram{
 
 border:1px solid white;
-
-padding:8px 18px;
-
+padding:6px 14px;
 border-radius:20px;
-
 text-decoration:none;
-
 color:white;
-
 }
 
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
 
 /* HERO TEXT */
 
-.hero-text h1{
-
-font-size:60px;
-
+.hero-content h1{
+font-size:65px;
 margin-bottom:10px;
-
 }
 
-.hero-text p{
-
+.hero-content p{
 margin-bottom:25px;
-
 }
 
 .booking-btn{
 
-background:linear-gradient(45deg,#36d1dc,#5b86e5);
-
+background:#36d1dc;
 padding:14px 30px;
-
 border-radius:30px;
-
 text-decoration:none;
-
 color:white;
 
 }
 
+/* SECTION */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
 
 /* FACILITY */
 
-.facility-section{
-
-padding:100px 10%;
-
-text-align:center;
-
-}
-
 .facility-grid{
 
-margin-top:50px;
+margin-top:40px;
 
 display:grid;
-
 grid-template-columns:repeat(4,1fr);
 
 gap:20px;
 
 max-width:900px;
-
 margin-left:auto;
 margin-right:auto;
 
@@ -160,41 +130,34 @@ margin-right:auto;
 
 .facility{
 
-background:rgba(255,255,255,0.1);
+background:rgba(255,255,255,0.08);
 
 padding:20px;
 
-border-radius:12px;
+border-radius:10px;
 
 font-size:22px;
 
+transition:0.3s;
+
+}
+
+.facility:hover{
+transform:translateY(-6px);
 }
 
 .facility p{
-
 font-size:13px;
-
 margin-top:6px;
-
 }
-
 
 /* VILLA */
 
-.villa-section{
-
-padding:120px 10%;
-
-text-align:center;
-
-}
-
 .villa-grid{
 
-margin-top:50px;
+margin-top:40px;
 
 display:grid;
-
 grid-template-columns:repeat(4,1fr);
 
 gap:25px;
@@ -212,49 +175,36 @@ overflow:hidden;
 }
 
 .villa-card img{
-
 width:100%;
-
 height:220px;
-
 object-fit:cover;
-
 }
 
 .villa-card h3{
-
 padding:15px;
-
 }
-
 
 /* MAP */
 
-.map-section{
-
-padding:120px 10%;
-
-text-align:center;
-
-}
-
 .map{
-
 margin-top:40px;
-
-border-radius:20px;
-
+border-radius:15px;
 overflow:hidden;
-
 }
 
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+opacity:0.7;
+}
 
 /* WA BUTTON */
 
 .wa-button{
 
 position:fixed;
-
 bottom:30px;
 right:30px;
 
@@ -270,56 +220,52 @@ justify-content:center;
 border-radius:50%;
 
 font-size:24px;
-
-text-decoration:none;
-
 color:white;
+text-decoration:none;
 
 }
 
-
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
 .facility-grid{
-
 grid-template-columns:repeat(3,1fr);
-
 }
 
 .villa-grid{
-
 grid-template-columns:repeat(2,1fr);
-
 }
 
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
 
 .menu{
-
 display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:10%;
+background:#1f3b44;
+padding:20px;
+border-radius:10px;
+}
 
+.menu-toggle{
+display:block;
+}
+
+.hero-content h1{
+font-size:40px;
 }
 
 .facility-grid{
-
 grid-template-columns:repeat(2,1fr);
-
 }
 
 .villa-grid{
-
 grid-template-columns:1fr;
-
-}
-
-.hero-text h1{
-
-font-size:40px;
-
 }
 
 }
