@@ -5,6 +5,7 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+
 body{
 
 background:linear-gradient(
@@ -17,7 +18,6 @@ background:linear-gradient(
 color:white;
 
 }
-
 
 
 /* HERO */
@@ -34,14 +34,15 @@ background-size:cover;
 background-position:center;
 
 display:flex;
+flex-direction:column;
 align-items:center;
 justify-content:center;
 
 text-align:center;
+
 position:relative;
 
 }
-
 
 
 /* NAVBAR */
@@ -50,19 +51,20 @@ position:relative;
 
 position:absolute;
 top:0;
+
 width:100%;
 
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:30px 10%;
+padding:25px 10%;
 
 }
 
 .logo{
 
-font-size:24px;
+font-size:22px;
 font-weight:600;
 
 }
@@ -70,7 +72,8 @@ font-weight:600;
 .menu{
 
 display:flex;
-gap:35px;
+gap:30px;
+
 list-style:none;
 
 }
@@ -82,94 +85,55 @@ text-decoration:none;
 
 }
 
-.menu a:hover{
-
-opacity:0.7;
-
-}
-
-.nav-btn{
+.instagram-btn{
 
 border:1px solid white;
+
 padding:8px 18px;
-border-radius:25px;
+
+border-radius:20px;
 
 text-decoration:none;
+
 color:white;
 
 }
-
-.nav-btn:hover{
-
-background:white;
-color:black;
-
-}
-
 
 
 /* HERO TEXT */
 
-.hero-content{
-
-max-width:700px;
-
-}
-
-.hero-content h1{
+.hero-text h1{
 
 font-size:60px;
-margin-bottom:15px;
+
+margin-bottom:10px;
 
 }
 
-.hero-content p{
+.hero-text p{
 
 margin-bottom:25px;
 
 }
 
-.hero-btn{
+.booking-btn{
 
 background:linear-gradient(45deg,#36d1dc,#5b86e5);
 
-padding:14px 35px;
+padding:14px 30px;
 
 border-radius:30px;
 
 text-decoration:none;
+
 color:white;
 
-display:inline-block;
-
-margin-bottom:20px;
-
-}
-
-.hero-btn:hover{
-
-transform:translateY(-5px);
-
 }
 
 
+/* FACILITY */
 
-/* ABOUT TOGGLE */
-
-.about-toggle{
-
-cursor:pointer;
-margin-bottom:25px;
-
-}
-
-
-
-/* ABOUT */
-
-.about{
-
-display:none;
+.facility-section{
 
 padding:100px 10%;
 
@@ -177,27 +141,20 @@ text-align:center;
 
 }
 
-.about h2{
-
-margin-bottom:20px;
-
-}
-
-
-
-/* FASILITAS */
-
 .facility-grid{
+
+margin-top:50px;
 
 display:grid;
 
 grid-template-columns:repeat(4,1fr);
 
-gap:18px;
+gap:20px;
 
-max-width:800px;
+max-width:900px;
 
-margin:auto;
+margin-left:auto;
+margin-right:auto;
 
 }
 
@@ -205,21 +162,11 @@ margin:auto;
 
 background:rgba(255,255,255,0.1);
 
-padding:15px;
+padding:20px;
 
-border-radius:10px;
+border-radius:12px;
 
-text-align:center;
-
-transition:0.3s;
-
-}
-
-.facility span{
-
-font-size:24px;
-display:block;
-margin-bottom:6px;
+font-size:22px;
 
 }
 
@@ -227,21 +174,14 @@ margin-bottom:6px;
 
 font-size:13px;
 
-}
-
-.facility:hover{
-
-background:rgba(255,255,255,0.2);
-
-transform:translateY(-5px);
+margin-top:6px;
 
 }
-
 
 
 /* VILLA */
 
-.villa{
+.villa-section{
 
 padding:120px 10%;
 
@@ -249,23 +189,19 @@ text-align:center;
 
 }
 
-.villa h2{
-
-margin-bottom:60px;
-
-}
-
 .villa-grid{
+
+margin-top:50px;
 
 display:grid;
 
 grid-template-columns:repeat(4,1fr);
 
-gap:30px;
+gap:25px;
 
 }
 
-.card{
+.villa-card{
 
 background:rgba(255,255,255,0.08);
 
@@ -275,26 +211,26 @@ overflow:hidden;
 
 }
 
-.card img{
+.villa-card img{
 
 width:100%;
+
 height:220px;
 
 object-fit:cover;
 
 }
 
-.card-content{
+.villa-card h3{
 
 padding:15px;
 
 }
 
 
-
 /* MAP */
 
-.location{
+.map-section{
 
 padding:120px 10%;
 
@@ -302,7 +238,9 @@ text-align:center;
 
 }
 
-.map-container{
+.map{
+
+margin-top:40px;
 
 border-radius:20px;
 
@@ -311,10 +249,9 @@ overflow:hidden;
 }
 
 
+/* WA BUTTON */
 
-/* WA FLOAT */
-
-.wa-float{
+.wa-button{
 
 position:fixed;
 
@@ -327,7 +264,6 @@ width:55px;
 height:55px;
 
 display:flex;
-
 align-items:center;
 justify-content:center;
 
@@ -336,25 +272,25 @@ border-radius:50%;
 font-size:24px;
 
 text-decoration:none;
+
 color:white;
 
 }
-
 
 
 /* RESPONSIVE */
 
 @media(max-width:900px){
 
-.villa-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
 .facility-grid{
 
 grid-template-columns:repeat(3,1fr);
+
+}
+
+.villa-grid{
+
+grid-template-columns:repeat(2,1fr);
 
 }
 
@@ -368,19 +304,19 @@ display:none;
 
 }
 
-.villa-grid{
-
-grid-template-columns:1fr;
-
-}
-
 .facility-grid{
 
 grid-template-columns:repeat(2,1fr);
 
 }
 
-.hero-content h1{
+.villa-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-text h1{
 
 font-size:40px;
 
