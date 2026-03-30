@@ -2,39 +2,37 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#fff;
+background:#f5f5f5;
 }
 
 /* HERO */
 
 .hero{
 height:90vh;
-background:url("image/background-home.jpg");
+background-image:url("image/background-home.jpg");
 background-size:cover;
 background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 position:relative;
 color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
 }
 
-.hero::after{
+.hero::before{
 content:"";
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
 background:rgba(0,0,0,0.5);
+top:0;
+left:0;
 }
-
-/* NAVBAR */
 
 .navbar{
 position:absolute;
@@ -48,14 +46,14 @@ z-index:2;
 }
 
 .logo{
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 }
 
 .menu{
 display:flex;
-gap:30px;
 list-style:none;
+gap:30px;
 }
 
 .menu a{
@@ -63,9 +61,9 @@ color:white;
 text-decoration:none;
 }
 
-.booking-top{
+.booking-btn{
 border:2px solid white;
-padding:8px 18px;
+padding:8px 20px;
 border-radius:25px;
 color:white;
 text-decoration:none;
@@ -80,13 +78,12 @@ max-width:600px;
 }
 
 .hero-text h1{
-font-size:60px;
+font-size:55px;
 margin-bottom:10px;
 }
 
 .hero-text p{
-margin-bottom:20px;
-font-size:18px;
+margin-bottom:25px;
 }
 
 .hero-btn{
@@ -106,14 +103,14 @@ width:100%;
 }
 
 .wave svg{
-width:100%;
 display:block;
+width:100%;
 }
 
 /* VILLA */
 
 .villa{
-padding:70px 10%;
+padding:60px 10%;
 text-align:center;
 }
 
@@ -131,8 +128,8 @@ gap:25px;
 .card{
 background:white;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
 overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -142,7 +139,7 @@ object-fit:cover;
 }
 
 .card h3{
-margin:15px 0 5px;
+margin:15px 0 10px;
 }
 
 .card p{
