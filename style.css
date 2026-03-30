@@ -5,12 +5,9 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-/* BACKGROUND */
-
 body{
 
-background:
-linear-gradient(
+background:linear-gradient(
 180deg,
 #0f2027,
 #203a43,
@@ -84,7 +81,7 @@ transition:0.3s;
 
 .menu a:hover{
 
-opacity:0.6;
+opacity:0.7;
 
 }
 
@@ -93,8 +90,9 @@ opacity:0.6;
 border:1px solid white;
 padding:8px 18px;
 border-radius:25px;
-color:white;
+
 text-decoration:none;
+color:white;
 
 transition:0.3s;
 
@@ -117,7 +115,7 @@ max-width:650px;
 
 .hero-content h1{
 
-font-size:70px;
+font-size:65px;
 margin-bottom:15px;
 
 }
@@ -125,15 +123,14 @@ margin-bottom:15px;
 .hero-content p{
 
 font-size:18px;
-opacity:0.9;
 margin-bottom:30px;
+opacity:0.9;
 
 }
 
 .hero-btn{
 
-background:
-linear-gradient(45deg,#36d1dc,#5b86e5);
+background:linear-gradient(45deg,#36d1dc,#5b86e5);
 
 padding:15px 40px;
 
@@ -154,23 +151,31 @@ transform:translateY(-6px);
 
 }
 
-/* WAVE */
+/* ABOUT */
 
-.wave{
+.about{
 
-position:absolute;
-bottom:-1px;
-width:100%;
+padding:120px 10%;
 
 }
 
-.wave svg{
+.about-container{
 
-width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
 
 }
 
-/* SECTION */
+.about-image img{
+
+width:100%;
+border-radius:15px;
+
+}
+
+/* VILLA */
 
 .villa{
 
@@ -181,12 +186,10 @@ text-align:center;
 
 .villa h2{
 
-font-size:38px;
 margin-bottom:60px;
+font-size:36px;
 
 }
-
-/* GRID */
 
 .villa-grid{
 
@@ -196,20 +199,17 @@ gap:40px;
 
 }
 
-/* CARD */
-
 .card{
 
 background:rgba(255,255,255,0.08);
 
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 
 border-radius:18px;
 
-box-shadow:
-0 10px 25px rgba(0,0,0,0.3);
-
 overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 
 transition:0.4s;
 
@@ -219,35 +219,43 @@ transition:0.4s;
 
 transform:translateY(-12px);
 
-box-shadow:
-0 25px 50px rgba(0,0,0,0.4);
-
 }
 
 .card img{
 
 width:100%;
-height:240px;
+height:230px;
 object-fit:cover;
 
 }
 
 .card-content{
 
-padding:22px;
+padding:20px;
 
 }
 
-.card-content h3{
+/* LOCATION */
 
-margin-bottom:10px;
+.location{
+
+padding:120px 10%;
+text-align:center;
 
 }
 
-.card-content p{
+.location-text{
 
-font-size:14px;
-opacity:0.8;
+margin-bottom:40px;
+
+}
+
+.map-container{
+
+border-radius:20px;
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
 
 }
 
@@ -290,9 +298,15 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
 .hero-content h1{
 
-font-size:48px;
+font-size:45px;
 
 }
 
@@ -314,13 +328,7 @@ grid-template-columns:1fr;
 
 .hero-content h1{
 
-font-size:36px;
-
-}
-
-.hero-content p{
-
-font-size:15px;
+font-size:35px;
 
 }
 
