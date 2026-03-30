@@ -25,53 +25,26 @@
 <div class="logo">Pondok Lawu</div>
 
 <ul class="menu">
-<li><a href="#">Home</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#facility">Fasilitas</a></li>
 <li><a href="#villa">Villa</a></li>
 <li><a href="#map">Lokasi</a></li>
 </ul>
 
-<a href="https://instagram.com/username_kamu" class="nav-btn">
-Instagram
-</a>
+<a href="https://instagram.com" class="instagram-btn">Instagram</a>
 
 </nav>
 
 
-
-<div class="hero-content">
+<div class="hero-text">
 
 <h1>Pondok Lawu</h1>
 
-<p>
-Nikmati pengalaman menginap dengan suasana alam yang sejuk dan menenangkan
-</p>
+<p>Villa nyaman dengan suasana alam yang sejuk dan menenangkan</p>
 
-<a href="https://wa.me/628123456789" class="hero-btn">
+<a href="https://wa.me/6289517388602" class="booking-btn">
 Booking Sekarang
 </a>
-
-<div class="about-toggle" onclick="toggleAbout()">
-ℹ️ Tentang Kami
-</div>
-
-
-<div class="facility-grid">
-
-<div class="facility"><span>🏊</span><p>Kolam Dewasa</p></div>
-<div class="facility"><span>👶</span><p>Kolam Anak</p></div>
-<div class="facility"><span>📶</span><p>WiFi</p></div>
-<div class="facility"><span>🎣</span><p>Pemancingan</p></div>
-
-<div class="facility"><span>🎱</span><p>Billiard</p></div>
-<div class="facility"><span>🏀</span><p>Basket</p></div>
-<div class="facility"><span>🌿</span><p>Halaman Luas</p></div>
-<div class="facility"><span>🚗</span><p>Parkir</p></div>
-
-<div class="facility"><span>🛝</span><p>Playground</p></div>
-<div class="facility"><span>🏓</span><p>Tenis Meja</p></div>
-<div class="facility"><span>🌇</span><p>Rooftop</p></div>
-
-</div>
 
 </div>
 
@@ -79,15 +52,27 @@ Booking Sekarang
 
 
 
-<section class="about" id="about">
+<section class="facility" id="facility">
 
-<h2>Tentang Kami</h2>
+<h2>Fasilitas</h2>
 
-<p>
-Pondok Lawu adalah tempat menginap dengan suasana alam yang sejuk dan
-pemandangan indah. Tempat ini cocok untuk liburan keluarga maupun
-staycation bersama orang terdekat.
-</p>
+<div class="facility-grid">
+
+<div class="facility-item">🏊 Kolam Dewasa</div>
+<div class="facility-item">👶 Kolam Anak</div>
+<div class="facility-item">📶 WiFi</div>
+<div class="facility-item">🎣 Pemancingan</div>
+
+<div class="facility-item">🎱 Billiard</div>
+<div class="facility-item">🏀 Basket</div>
+<div class="facility-item">🌿 Halaman Luas</div>
+<div class="facility-item">🚗 Parkir Luas</div>
+
+<div class="facility-item">🛝 Playground</div>
+<div class="facility-item">🏓 Tenis Meja</div>
+<div class="facility-item">🌇 Rooftop</div>
+
+</div>
 
 </section>
 
@@ -99,32 +84,39 @@ staycation bersama orang terdekat.
 
 <div class="villa-grid">
 
-<div class="card">
+<div class="villa-card">
+
 <img src="image/villa-utama.jpg">
-<div class="card-content">
+
 <h3>Villa Utama</h3>
-</div>
+
 </div>
 
-<div class="card">
+
+<div class="villa-card">
+
 <img src="image/villa-minahasa.jpg">
-<div class="card-content">
+
 <h3>Minahasa</h3>
-</div>
+
 </div>
 
-<div class="card">
+
+<div class="villa-card">
+
 <img src="image/wood-cabin.jpg">
-<div class="card-content">
+
 <h3>Wood Cabin</h3>
-</div>
+
 </div>
 
-<div class="card">
+
+<div class="villa-card">
+
 <img src="image/pavilion.jpg">
-<div class="card-content">
+
 <h3>Pavilion</h3>
-</div>
+
 </div>
 
 </div>
@@ -133,14 +125,14 @@ staycation bersama orang terdekat.
 
 
 
-<section class="location" id="map">
+<section class="map-section" id="map">
 
 <h2>Lokasi Kami</h2>
 
-<div class="map-container">
+<div class="map">
 
 <iframe
-src="https://www.google.com/maps?q=Gunung+Lawu&output=embed"
+src="https://maps.app.goo.gl/rP2dxeE2MgdTKMH26"
 width="100%"
 height="400"
 style="border:0;"
@@ -153,27 +145,9 @@ loading="lazy">
 
 
 
-<a href="https://wa.me/628123456789" class="wa-float">
+<a href="https://wa.me/6289517388602" class="whatsapp">
 💬
 </a>
-
-
-
-<script>
-
-function toggleAbout(){
-
-var about = document.getElementById("about");
-
-if(about.style.display === "block"){
-about.style.display = "none";
-}else{
-about.style.display = "block";
-}
-
-}
-
-</script>
 
 
 </body>
