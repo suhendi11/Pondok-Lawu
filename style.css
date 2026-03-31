@@ -51,7 +51,7 @@ padding:20px 10%;
 .menu-toggle {
     font-size: 26px;
     cursor: pointer;
-    margin-left: 20px;   /* ⬅️ ini yang bikin agak ke kanan dari pinggir kiri */
+    margin-left: 8px;   /* ⬅️ ini yang bikin agak ke kanan dari pinggir kiri */
 }
 
 }
