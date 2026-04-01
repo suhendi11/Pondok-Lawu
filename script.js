@@ -1,16 +1,36 @@
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// SLIDER VILLA FINAL
 
-        document.querySelector(this.getAttribute('href'))
-            .scrollIntoView({
-                behavior: 'smooth'
-            });
-    });
-});
+const sliders = document.querySelectorAll('.slider');
 
-// Simple alert booking
-document.querySelector('.btn').addEventListener('click', () => {
-    alert("Anda akan diarahkan ke WhatsApp untuk booking");
+sliders.forEach((slider) => {
+
+    const slidesContainer = slider.querySelector('.slides');
+    const slides = slider.querySelectorAll('img');
+
+    let index = 0;
+    let interval;
+
+    function startSlider(){
+        interval = setInterval(() => {
+            index++;
+
+            if(index >= slides.length){
+                index = 0;
+            }
+
+            slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000);
+    }
+
+    function stopSlider(){
+        clearInterval(interval);
+    }
+
+    // start auto
+    startSlider();
+
+    // pause saat hover (desktop)
+    slider.addEventListener('mouseenter', stopSlider);
+    slider.addEventListener('mouseleave', startSlider);
+
 });
